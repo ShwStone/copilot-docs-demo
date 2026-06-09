@@ -1,0 +1,7 @@
+site_name: CS Wiki
+site_description: A simple CS wiki site built with MkDocs Material
+site_url: https://ShwStone.github.io/copilot-docs-demo/
+theme:
+  name: material
+nav:
+  - Home: index.md
