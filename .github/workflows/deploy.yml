@@ -18,7 +18,9 @@ env:
   PYTHON_VERSION: '3.11'
 
 permissions:
-  contents: write
+  contents: write # Required to update the gh-pages deployment branch.
+  issues: write
+  pull-requests: write
 
 concurrency:
   group: pages-${{ github.ref }}
@@ -60,7 +62,7 @@ jobs:
           source-dir: site
           preview-branch: gh-pages
           umbrella-dir: pr-preview
-          wait-for-pages-deployment: true
+          wait-for-pages-deployment: false
 
       - name: Remove PR preview
         if: github.event_name == 'pull_request' && github.event.action == 'closed'
