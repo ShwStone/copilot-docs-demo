@@ -4,3 +4,4 @@ theme:
   name: material
 nav:
   - Home: index.md
+  - Git 与 GitHub 专题: git-github.md
