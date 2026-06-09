@@ -1,0 +1,6 @@
+site_name: CS Wiki
+site_description: A simple CS wiki site built with MkDocs Material
+theme:
+  name: material
+nav:
+  - Home: index.md
