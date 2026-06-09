@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  PYTHON_VERSION: '3.11'
+
 permissions:
   contents: read
   pages: write
@@ -25,10 +28,10 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: pip install -r requirements.txt
 
       - name: Build site
         run: mkdocs build

@@ -5,7 +5,7 @@ This repository hosts a simple **CS Wiki** website built with **MkDocs Material*
 ## Local development
 
 ```bash
-pip install mkdocs-material
+pip install -r requirements.txt
 mkdocs serve
 ```
 
