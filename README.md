@@ -18,3 +18,4 @@ mkdocs build
 ## Deployment
 
 A GitHub Actions workflow at `.github/workflows/deploy.yml` automatically builds and deploys the site to **GitHub Pages** on pushes to `main`.
+Pull requests against `main` also get a preview deployment link posted in the PR.
