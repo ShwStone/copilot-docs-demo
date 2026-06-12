@@ -5,3 +5,4 @@ theme:
 nav:
   - Home: index.md
   - Git 与 GitHub 专题: git-github.md
+  - Copilot 使用指南: copilot.md
